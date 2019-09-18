@@ -1,0 +1,342 @@
+/* ======== Style ======== */
+@font-face {font-family: 'Gotham Book';font-style: normal;font-weight: normal;src: local('Gotham Book'), url('../fonts/Gotham-Book.otf') format('opentype');}
+@font-face {font-family: 'Gotham Bold';font-style: normal;font-weight: normal;src: local('Gotham Bold'), url('../fonts/Gotham-Bold.otf') format('opentype');}
+@font-face {font-family: 'Gotham Light';font-style: normal;font-weight: normal;src: local('Gotham Light'), url('../fonts/Gotham-Light.otf') format('opentype');}
+@font-face {font-family: 'Gotham Medium';font-style: normal;
+font-weight: normal;src: local('Gotham Medium'), url('../fonts/Gotham-Medium.otf') format('opentype');}
+@font-face {font-family: 'Gotham Thin Regular'; font-style: normal;
+font-weight: normal;src: local('Gotham Thin Regular'), url('../fonts/Gotham-Thin.otf') format('opentype');}
+body {font-family: 'Gotham Thin Regular'}
+textarea:focus, input:focus, select:focus, button:focus {box-shadow: 0 0 0 0;border: 0 none;outline: 0;}
+
+.header {
+	width: 100%;
+	height: 100vh;
+	background: url('../images/header.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -16px;
+}
+.header #logo {
+    overflow: hidden;
+    position: fixed;
+    width: 500px;
+    height: 495px;
+    z-index: 2;
+    right: -20%; 
+    top: 17%;
+}
+.header #logo-txt {
+    width: 380px;
+    height: 120px;
+    padding: 250px 0 0 200px;
+}
+.header #p-header {
+    color: #fff;
+    display: flex;
+    padding: 0 0 0 230px;
+    font-family: 'Gotham Light';
+    text-align: center;
+    font-size: 23px;
+}
+.content {
+	width: 100%;
+	height: 100vh;
+	background: url('../images/content.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    box-sizing: border-box;
+}
+.content h1 {
+    color: #db0036;
+    margin: 150px 0 0 150px;
+    font-size: 60px;
+    font-family: 'Gotham Bold';
+}
+.content h2 {
+    color: #fff;
+    margin: 30px 0 0 150px;
+    font-size: 30px;
+    font-family: 'Gotham Book';
+}
+.socios {
+    background: black;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 5;
+    position: relative;
+}
+.socios h2 {
+    color: #db0036;
+    margin: 50px 0 50px 0;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Gotham Bold';
+}
+.socios .p1 {
+    color: #db0036;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 15px 15px 15px 290px;
+    font-family: 'Gotham Bold';
+}
+.socios .p2 {
+    color: #db0036;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 15px 275px 15px 15px;
+    font-family: 'Gotham Bold';
+}
+.socios #p-luiz {
+    color: #fff;
+    text-align: center;
+    margin: 15px 15px 15px 290px;
+    font-family: 'Gotham Light';
+}
+.socios #p-chris {
+    color: #fff;
+    text-align: center;
+    margin: 15px 275px 15px 15px;
+    font-family: 'Gotham Light';
+}
+.socios .socio1 {
+    width: 200px;
+    height: 197px;
+    padding: 100px 10px 10px 350px;
+}
+.socios .socio2 {
+    width: 200px;
+    height: 197px;  
+    padding: 100px 10px 10px 80px;
+}
+.clientes {
+	width: 100%;
+	height: 100vh;
+    background: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 5;
+    position: relative;
+}
+.clientes h2 {
+    color: #db0036;
+    margin: 50px 0 0 0;
+    text-align: center;
+    font-size: 34px;
+    font-family: 'Gotham Bold'
+}
+.clientes .col-3 img {
+    width: 40%;
+    margin: 0 auto;
+    display: block;
+}
+.map {
+    background: black;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    z-index: 5;
+    position: relative;
+}
+.map h2 {
+    color: #fff;
+    margin: 160px 0 0 150px;
+    font-size: 50px;
+    font-family: 'Gotham Bold'
+}
+.form input {
+    border: 3px solid #db0036;
+    width: 90%;
+    background-color: black;
+    border-radius: 300px;
+    padding: 5px 10px;
+    text-align: left;
+    margin: 30px 0 0 150px;
+    display: block;
+    font-family: 'Gotham Light';
+    font-size: 12px;
+}
+.form input:focus {
+    color: #fff;
+}
+.form input, select, textarea {
+    color: #fff;
+}
+.form button {
+    width: 110px;
+    height: 30px;
+    border: none;
+    background: #db0036;
+    color: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 55px 0 0 150px;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.30s;
+    font-family: 'Gotham Medium';
+    font-size: 12px;
+}
+.form button:hover {
+    box-shadow: 0 0.5em 0.5em -0.4em #333;
+    transform: translateY(-0.25em);
+    color: #fff;
+    background: black;
+    border: 3px solid #db0036;
+}
+
+.map iframe {
+    margin: 160px 100px 0 190px;
+    width: 300px; 
+    height: 300px;
+}
+.map h3 {
+    color: #db0036;
+    font-family: 'Gotham Bold';
+    margin: 10px 0 0 190px
+}
+.map p {
+    color: #fff;
+    font-family: 'Gotham Light';
+    margin: 10px 0 0 190px
+}
+.footer img {
+    width: 100%;
+    z-index: 5;
+    position: relative;
+}
+@media only screen and (max-width: 576px) {
+    .header #logo {
+        z-index: -9999;
+    }
+    .header #logo-txt{
+        padding: 250px 98px 0 98px;
+    }
+    .header #p-header {
+        padding: 0 0 0 150px;
+    }
+    
+    .content h1 { 
+        margin: 80px 40px 40px 40px;
+        font-size: 40px;
+    }
+    .content h2 {
+        margin: 40px;
+        font-size: 25px;
+    }
+    .socios {
+        height: auto;
+    }
+    .socios h2 {
+        font-size: 30px;
+    }
+    .socios .socio1, .socios .socio2 {
+        width: 130px;
+        height: 127px;
+        padding: 0px 223px 0px 223px;
+    }
+    .socios .p1, .socios .p2 {
+        margin: 0;
+    }
+    .socios #p-luiz, .socios #p-chris {
+        margin: 25px 25px 50px 25px;
+    }
+    .clientes {
+        width: 100%;
+        height: auto;	
+        background: #fff;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .clientes .col {
+        float: left;
+    }
+    .clientes .col .col-3 {
+        width: 50%;
+    }
+    .clientes div.row {
+        margin: 0 !important;
+    }
+    .clientes img {
+        width: 1%;
+    }
+    .map {
+        height: auto;
+    }
+    .form input {
+        margin: 30px 0 0 55px;
+        width: 70%;
+    }
+    .form button {
+        display: inline;
+        margin: 20px 0 0 215px
+    }
+    .map h2 {
+        font-size: 30px;
+        margin: 30px 0 30px -35px;
+        text-align: center;
+    }
+    .map iframe {
+        margin: 30px 0 0 145px;
+        width: 250px; 
+        height: 250px;
+    }
+    .map h3 {
+        margin: 10px 0 10px 220px;
+        font-size: 20px;
+    }
+    .map p {
+        margin: 0 0 30px -30px;
+        text-align: center
+    }
+}
+
+/* ANIMACOES SCROLL */
+[data-animation] {
+	filter: alpha(opacity=75);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
+	opacity: 0;
+	transition: .4s;
+}
+
+[data-animation="top"] {
+	transform: translate3d(0, -50px, 0);
+}
+
+[data-animation="left"] {
+	transform: translate3d(-50px, 0, 0);
+}
+
+[data-animation="right"] {
+	transform: translate3d(50px, 0, 0);
+}
+
+[data-animation].animate {
+	opacity: 1;
+	transform: translate3d(0, 0, 0);
+}
+
+
+/* Hack Opacity Fix IE */
+@media screen and (min-width:0\0) {  
+  [data-animation] {opacity: 1 !important;transition: 0 !important;}
+
+	[data-animation="top"] {transform: translate3d(0, 0, 0) !important;}
+
+	[data-animation="left"] {transform: translate3d(0, 0, 0) !important;}
+
+	[data-animation="right"] {transform: translate3d(0, 0, 0) !important;}
+
+	[data-animation].animate {opacity: 1 !important;transform: translate3d(0, 0, 0) !important;}
+}
