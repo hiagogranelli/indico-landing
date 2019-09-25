@@ -2,9 +2,19 @@
 <html lang="en">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-59237948-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-59237948-1');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="./images/favicon.ico" />
     <title>Indico</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -17,22 +27,48 @@
     <header class="header">
         <p style="text-indent:-9999px">.</p>
         <img id="logo" src="./images/logo.png" alt="">
+        <div id="row-logo" class="row">
         <img id="logo-txt" src="./images/logo-texto.png" alt="">
-        <p id="p-header">Lorem ipsim dolor alggo</p>
+        </div>
+        <div id="row-gif">
+        <img id="gif" src="./images/ScrollDown.gif">
+        </div>
     </header>
 
 
     <section id="section2" class="content">
-        <div class="row">
+        <div id="row1" class="row">
             <div class="col col-12" data-animation="left">
                 <h1>
-                    Lorem ipsum <br>
-                    dolor sit amet.
+                    Quem somos?
                 </h1>
                 <h2>
-                    Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit,<br> sed do eiusmod tempor<br>
-                    incididunt ut labore et dolore<br> magna aliqua.
+                    Somos a Indico, uma empresa de data driven marketing e relacionamento com clientes, que trabalha para aproximar pessoas e marcas, através de dados com projetos e ações criativas e inovadoras. <br>
+                    Criamos caminhos para a sua marca inspirar pessoas. Desenvolvemos estratégias para entusiasmar. Queremos muito que, tudo o que nos estimula, chegue nos lugares mais improváveis de maneira eficaz, assertiva e lúdica.<br>
+                    Pra tornar tudo isso possível, usamos nosso know how em inteligência de dados para entender comportamentos e hábitos de consumo. Assim, sabendo mais sobre os consumidores, podemos solidificar o relacionamento entre eles e as marcas. <br>
+                    Nosso time é especialista em gerar fans para sua empresa. Em engajar e humanizar o que muitas vezes, parece que está no automático.<br><br>  Somos a Indico.<br> Seja bem-vindo! <br>
                 </h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="clientes">
+        <div class="row">
+            <h2>Serviços</h2>
+        </div>
+        <div class="row">
+            <div  class="col col-12" data-animation="top">
+                <p><b>Serviços de dados e DBM</b><br><br>
+
+                Nossa equipe tem vasta experiência em estruturação e gerenciamento de banco de dados. Construímos, gerimos, tratamos, segmentamos e analisamos toda a sua informação, para entender o que o seu consumidor deseja.<br><br><br>
+
+                <b>Marketing de relacionamento</b><br><br>
+                Marketing de relacionamento é sobre pessoas, seus desejos, demandas e sonhos. É sobre entender que o consumidor multicanal quer se relacionar com quem está atento nele. Atualmente é preciso ir além do resultado final. As marcas devem estar atentas a toda a jornada e pontos de contato com o consumidor, pois são esses cuidados que formam a experiência e embasam a decisão do consumidor. Estamos aqui para te ajudar com todo esse processo!<br><br><br>
+                <b>Loyalty e incentivo</b><br><br>
+                Fidelizar é ainda mais eficiente que conquistar novos clientes. Por isso, contamos com um time incrível para colocar em pé qualquer programa de loyalty e incentivo. Do planejamento até a integração, passando por gestão e criação de todo o programa, podemos contribuir para o seu negócio de maneira personalizada. Você conta a sua necessidade e a gente desenha a melhor solução!<br><br><br>
+                <b>Inteligência artificial</b><br><br>
+                A boa aplicação da Inteligência Artificial permite massificar a personalização, criar ofertas e ações personalizadas e contextualizadas ao momento do cliente. Assim, com a 
+                comunicação completamente direcionada, o consumidor sente-se realmente protagonista e vivencia uma experiência diferenciada com a marca.</p>
             </div>
         </div>
     </section>
@@ -40,103 +76,34 @@
     <section class="socios">
         <div class="row">
             <div class="col col-12" data-animation="top">
-                <h2>Lorem ipsum</h2>
+                <h2>Executivos</h2>
             </div>
 
-            <div>
+            <div id="socios">
                 <div class="col col-6" data-animation="top">
                     <img class="socio1" src="./images/socios_08.jpg" alt="Christiano Ranoya">
                     <p class="p1">Christiano Ranoya</p>
-                    <p id="p-luiz">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit,<br> sed do eiusmod
-                        tempor<br> incididunt ut labore et dolore<br> magna aliqua. Ut enim ad <br>minim veniam, quis
-                        nostrud.</p>
+                    <p id="p-luiz">Bacharel em Economia (PUC-SP), MBA em Finanças e Marketing Internacional e pósgraduação em Marketing. <br><br>Empreendedor, acelerador, fundador da Indico, Alymente, Left e Garage. Vasta experiência profissional no Brasil e no exterior, em empresas como Santander, Lacta, Votorantim e Biokinetics. <br><br>Forte atuação em gerenciamento de portifólio de clientes e programas de relacionamento para empresas de grande porte. <br><br>Palestrante nacional e internacional.</p>
                 </div>
 
                 <div class="col col-6" data-animation="top">
                     <img class="socio2" src="./images/socios_05.jpg" alt="Luiz Panareli">
                     <p class="p2">Luiz Panareli</p>
-                    <p id="p-chris">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit,<br> sed do eiusmod
-                        tempor<br> incididunt ut labore et dolore<br> magna aliqua. Ut enim ad <br>minim veniam, quis
-                        nostrud.</p>
+                    <p id="p-chris">Formado em Análise de Sistemas pela Unip e em Marketing pela Universidade Metodista e MBA em Marketing pela FGV. Com 20 anos de experiência no mercado de Tecnologia, Database Marketing e BI.<br><br> Em 2009 empreendeu e construiu a MyDBM onde dirigiu implantações de grandes projetos de Database Marketing, BI e CRM. Em 2011, junto com outros sócios, construiu a INDICO,empresa especializada em Marketing de Relacionamento e Database Marketing. <br><br>Em 2017, construiu uma nova unidade de negócios na Silicon Valey com uma parceria com o Plug & Play Tech Center, começando com um escritório de P&D para trazer novas tecnologias para o Brasil, o que gerou três novas empresas nos EUA e no Brasil.</p>
                 </div>
             </div>
 
-        </div>
-    </section>
-
-    <section class="clientes">
-        <div class="row">
-            <h2>Clientes</h2>
-        </div>
-        <div style="margin: 75px 150px;" class="row">
-            <div style="margin-left: 1.2%" class="col col-12" data-animation="top">
-                <div class="col col-3">
-                    <img src="./images/accor.png" alt="">
-                </div>
-                <div class="col col-3">
-                    <img src="./images/ache.png" alt="">
-                </div>
-                <div class="col col-3">
-                    <img src="./images/csh.png" alt="">
-                </div>
-                <div class="col col-3">
-                    <img src="./images/exeltis.png" alt="">
-                </div>
-            </div>
-            <div class="col col-12" data-animation="top">
-                <div class="col col-3">
-                    <img src="./images/galderma.jpg" alt="">
-                </div>
-                <div class="col col-3">
-                    <img src="./images/grand-mercure.jpg" alt="">
-                </div>
-                <div class="col col-3">
-                    <img src="./images/hospital-albert-einstein.png" alt="">
-                </div>
-                <div class="col col-3">
-                    <img src="./images/ibis.jpg" alt="">
-                </div>
-            </div>
-            <div class="col col-12" data-animation="top">
-                <div class="col col-3">
-                    <img src="./images/jnj.png" alt="">
-                </div>
-                <div class="col col-3">
-                    <img src="./images/kimberly.png" alt="">
-                </div>
-                <div class="col col-3">
-                    <img src="./images/lemonade.png" alt="">
-                </div>
-                <div class="col col-3">
-                    <img src="./images/mds.png" alt="">
-                </div>
-
-            </div>
-            <div class="col col-12" data-animation="top">
-                <div class="col col-3">
-                    <img src="./images/medley.png" alt="">
-                </div>
-                <div class="col col-3">
-                    <img src="./images/pullman.png" alt="">
-                </div>
-                <div class="col col-3">
-                    <img src="./images/toyota.jpg" alt="">
-                </div>
-                <div class="col col-3">
-                    <img src="./images/tunap.png" alt="">
-                </div>
-            </div>
         </div>
     </section>
 
     <section class="map">
         <div class="row">
+            <div id="mapa">
             <div class="col col-6 form" data-animation="left">
                 <h2>
-                    Lorem ipsum<br>
-                    dolor sit amet.
+                   Contato
                 </h2>
-                <form action="" id="form1">
+                <!-- <form action="" id="form1">
                     <label for="">
                         <input type="text" placeholder="Nome" class="obrigatorio">
                     </label>
@@ -147,24 +114,28 @@
                         <input type="text" placeholder="E-mail" class="obrigatorio">
                     </label>
                     <button type="submit" class="">enviar</button>
-                </form>
+                </form> -->
+                <h3>São Paulo</h3>
+                <p>
+                    Rua Funchal, 203 - 12° andar<br>
+                    Vila Olímpia - São Paulo, SP
+                </p>
+                <p id="telefone">11 4890-2090</p>
+                <p id="email">contato@indico.net.br</p>
             </div>
             <div class="col col-6" data-animation="top">
+                
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.3116174587517!2d-46.690707285021595!3d-23.59315468466714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5747a08b52d9%3A0x2683638340ba26f1!2sR.%20Funchal%2C%20203%20-%20Vila%20Ol%C3%ADmpia%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004551-060!5e0!3m2!1spt-BR!2sbr!4v1568663421109!5m2!1spt-BR!2sbr"
                     frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-                <h3>São Paulo</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, <br>
-                    consectetur adipiscing elit, sed
-                </p>
             </div>
+        </div>
         </div>
     </section>
 
     <section class="footer">
-        <div class="row">
-            <div class="col col-12">
+        <div>
+            <div>
                 <img src="./images/footer.jpg" alt="">
             </div>
         </div>

@@ -35,4 +35,20 @@ if (window.innerWidth >= 577) {
   }
 }
 
+//ENVIAR FORMULARIO
+
+document.querySelector('#submit').addEventListener('click', function() {
+  $.ajax({url:'/teste', type:'post', 
+  data: {
+    nome: document.querySelector('#nome').value,
+    telefone: document.querySelector('#telefone').value,
+    email: document.querySelector('#email').value,
+  },
+  success: function(result){
+    console.log(result)
+  }
+})
+})
+console.log(document.querySelector('#submit'))
+
 
